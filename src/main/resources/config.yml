@@ -1,0 +1,74 @@
+# Token to run the bot with
+token: "PUT_BOT_TOKEN_HERE"
+
+# Database to use for BotCommands dependency (THIS IS NOT FOR THE BOTS DATA)
+# Supports: MariaDB, SQLite, PostgreSQL, H2
+database: "PUT_CONNECTION_STRING_HERE"
+
+# The Mongo database connection string to store data for the bot
+mongo: "PUT_CONNECTION_STRING_HERE"
+
+# Owner IDs of the bot
+owners:
+  primary: 242385234992037888 # srnyx
+  other:
+    - 533985117589471233 # reecetd
+    - 697588547217260545 # ekenz_
+    - 275122446007271426 # miniwraith
+
+# Values like cooldowns
+times:
+  # The amount of time users have to select a door
+  reactions: 25 # seconds
+  # The definitive amount of time between each house message
+  houses-cooldown: 5 # minutes
+
+# Settings regarding the activity check
+activity-check:
+  # How long until the previous activity check is considered old
+  cooldown: 60 # seconds
+  # The amount of users required to constitute there's activity
+  required-users: 3
+  messages:
+    # The amount of minutes a message is considered old (not counted)
+    oldest: 3 # minutes
+    # The number of messages until the bot gives up on checking
+    maximum: 10
+
+# The chance that a high-risk house event will occur
+high-risk-chance: 10 # percent
+
+# How much more presents VIPs get from the daily command
+vip-daily-multiplier: 1.5
+
+# Settings regarding the main guild for the bot
+guild:
+  # The ID of the guild
+  id: 1070565606203600996
+
+  # The different choices for the houses
+  houses:
+    one:
+      label: "Gold"
+      emoji: "<:housegold:1172317682956259358>"
+    two:
+      label: "Green"
+      emoji: "<:housegreen:1172317681660207206>"
+    three:
+      label: "Red"
+      emoji: "<:housered:1172317679944745076>"
+
+  # The formatted emoji for coal
+  coal: "<:coal:1181388428223455263>"
+
+  # Role IDs
+  roles:
+    manager: 1071614914139000882
+    vip:
+      - 1070574666944626699
+      - 1070569284918587422
+      - 1070574693377118328
+
+  # Channel IDs
+  channels:
+    general: 1070565606753042514
