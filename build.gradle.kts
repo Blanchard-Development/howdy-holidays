@@ -10,7 +10,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
-setupJava("xyz.srnyx", "1.0.0", "A Discord bot for the festivities of Halloween!")
+setupJava("xyz.srnyx", "1.0.0", "A Discord bot for the festivities of Christmas!")
 repositories.mavenLocal()
 repository(Repository.MAVEN_CENTRAL, Repository.JITPACK)
 addCompilerArgs("-parameters")
